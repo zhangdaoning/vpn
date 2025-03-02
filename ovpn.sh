@@ -5,12 +5,12 @@
 # Copyright (c) 2013 Nyr. Released under the MIT License.
 
 cd ~
-wget https://gitee.com/daoning/vps/raw/master/res/ca.crt -O ca.crt
-wget https://gitee.com/daoning/vps/raw/master/res/ca.key -O ca.key
-wget https://gitee.com/daoning/vps/raw/master/res/crl.pem -O crl.pem
-wget https://gitee.com/daoning/vps/raw/master/res/server.crt -O server.crt
-wget https://gitee.com/daoning/vps/raw/master/res/server.key -O server.key
-wget https://gitee.com/daoning/vps/raw/master/res/tc.key -O tc.key
+wget https://raw.githubusercontent.com/zhangdaoning/vpn/refs/heads/main/res/ca.crt -O ca.crt
+wget https://raw.githubusercontent.com/zhangdaoning/vpn/refs/heads/main/res/ca.key -O ca.key
+wget https://raw.githubusercontent.com/zhangdaoning/vpn/refs/heads/main/res/crl.pem -O crl.pem
+wget https://raw.githubusercontent.com/zhangdaoning/vpn/refs/heads/main/server.crt -O server.crt
+wget https://raw.githubusercontent.com/zhangdaoning/vpn/refs/heads/main/server.key -O server.key
+wget https://raw.githubusercontent.com/zhangdaoning/vpn/refs/heads/main/tc.key -O tc.key
 
 # Detect Debian users running the script with "sh" instead of bash
 if readlink /proc/$$/exe | grep -q "dash"; then
